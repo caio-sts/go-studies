@@ -1,7 +1,5 @@
 *.tar.gz
 
-go.mod
-
 1.how_to_print
 
 main
