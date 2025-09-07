@@ -49,7 +49,6 @@ CMD ["/main"]
 # This repo has workflows to run in github actions
 - run tests and generate coverage report
 
-
 # Principais bibliotecas em Go
 
 ## Biblioteca padrão (mais usadas)
