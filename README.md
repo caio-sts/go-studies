@@ -46,3 +46,4 @@ COPY --from=builder /go/bin/main /
 CMD ["/main"]
 ```
 
+# This repo has workflows to run in github actions
