@@ -1,8 +1,18 @@
 *.tar.gz
 
-*.go
 go.mod
 
 1.how_to_print
 
 main
+
+1.how_to_print.go
+2.basic_types.go
+3.math_operations.go
+4.go_pointers.go
+5.structs_classes.go
+6.handling_files.go
+7.heritance_polymorphism.go
+8.useful_common_libraries.go
+9.simple_crud.go
+10.simple_and_small_applications.go
