@@ -47,3 +47,4 @@ CMD ["/main"]
 ```
 
 # This repo has workflows to run in github actions
+- run tests and generate coverage report
