@@ -1,0 +1,37 @@
+name: ci-go
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Debug workspace
+        run: |
+          pwd
+          ls -la
+          echo "--- find go.mod ---"
+          find . -maxdepth 3 -name go.mod -print
+          echo "--- go version ---"
+          go version
+          echo "--- go env ---"
+          go env GOMOD GOWORK GOPATH GO111MODULE
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.x'
+          cache: false
+
+      - name: Build
+        run: go build ./...
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Test
+        run: go test -v ./...
