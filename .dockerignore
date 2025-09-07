@@ -1,0 +1,4 @@
+*.go
+*.tar.gz
+README.md
+go.mod
